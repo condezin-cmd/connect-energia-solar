@@ -262,7 +262,7 @@ img {
 }
 
 .brand-badge {
-  padding: 16px 24px;
+  padding: 17px 26px;
   border: 1px solid rgba(255, 255, 255, 0.38);
   box-shadow:
     0 20px 42px rgba(176, 108, 56, 0.2),
@@ -296,7 +296,7 @@ img {
 }
 
 .brand img {
-  height: 36px;
+  height: 40px;
   filter: drop-shadow(0 8px 18px rgba(166, 70, 13, 0.18));
 }
 
@@ -488,11 +488,11 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
+  grid-template-columns: 0.92fr 1.36fr 0.92fr;
   grid-template-areas:
     "byd core weg"
-    "bel core jng";
-  gap: 14px;
+    "bel core elgin";
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -522,8 +522,8 @@ img {
   grid-area: bel;
 }
 
-.validation-node-jng {
-  grid-area: jng;
+.validation-node-elgin {
+  grid-area: elgin;
 }
 
 .validation-node-media {
@@ -551,13 +551,13 @@ img {
     0 10px 24px rgba(255, 96, 0, 0.1);
 }
 
-.validation-node-media-jng,
-.brand-logo-frame-jng {
-  background: linear-gradient(180deg, #103a7a, #0c2d5c);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+.validation-node-media-elgin,
+.brand-logo-frame-elgin {
+  background: linear-gradient(180deg, #ffffff, #f5f5f5);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 16px 30px rgba(8, 26, 52, 0.24);
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .validation-node img {
@@ -567,11 +567,11 @@ img {
   object-fit: contain;
 }
 
-.validation-node-jng img,
-.brand-logo-card-jng img {
-  max-width: 170px;
-  max-height: 46px;
-  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.18));
+.validation-node-elgin img,
+.brand-logo-card-elgin img {
+  max-width: 140px;
+  max-height: 40px;
+  object-fit: contain;
 }
 
 .validation-node-weg .validation-node-media,
@@ -609,20 +609,20 @@ img {
   display: grid;
   align-content: center;
   justify-items: center;
-  gap: 14px;
-  padding: 28px 26px;
+  gap: 18px;
+  padding: 34px 26px 28px;
   border-radius: 30px;
-  color: #fff;
+  color: var(--ink);
   text-align: center;
   background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 38%),
-    radial-gradient(circle at bottom left, rgba(255, 220, 184, 0.16), transparent 34%),
-    linear-gradient(145deg, #ff7f24, #ef5a00);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+    radial-gradient(circle at 82% 18%, rgba(255, 197, 155, 0.3), transparent 28%),
+    radial-gradient(circle at 22% 82%, rgba(255, 236, 220, 0.72), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 248, 241, 0.98));
+  border: 1px solid rgba(255, 111, 31, 0.16);
   box-shadow:
-    0 32px 72px rgba(176, 108, 56, 0.22),
-    0 0 0 12px rgba(255, 255, 255, 0.4);
-  animation: float-soft 6.4s ease-in-out infinite;
+    0 30px 62px rgba(176, 108, 56, 0.16),
+    0 0 0 10px rgba(255, 111, 31, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 .validation-core::before {
@@ -630,25 +630,27 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(118deg, transparent 0 34%, rgba(255, 255, 255, 0.12) 44%, transparent 54%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 28%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), transparent 28%),
+    linear-gradient(135deg, rgba(255, 111, 31, 0.08), transparent 44%);
   pointer-events: none;
 }
 
 .validation-core::after {
   content: "";
   position: absolute;
-  inset: auto -58px -58px auto;
+  right: -40px;
+  bottom: -62px;
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 111, 31, 0.1);
+  background: rgba(255, 111, 31, 0.05);
 }
 
 .validation-core-region,
-.validation-core-logo,
-.validation-core-unit,
-.validation-core p {
+.validation-core-lockup,
+.validation-core p,
+.validation-core-foot {
   position: relative;
   z-index: 1;
 }
@@ -667,47 +669,134 @@ img {
   text-transform: uppercase;
 }
 
-.validation-core-logo {
+.validation-core-lockup {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 11px;
+}
+
+.validation-core-lockup::after {
+  content: "";
+  width: 108px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 111, 31, 0), rgba(255, 111, 31, 0.52), rgba(255, 111, 31, 0));
+}
+
+.validation-core-symbol {
+  position: relative;
+  width: 84px;
+  height: 76px;
+  display: block;
+}
+
+.validation-core-shape {
+  position: absolute;
+  background: linear-gradient(145deg, #ff8f43, #f76712);
+  box-shadow:
+    0 10px 20px rgba(247, 103, 18, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.validation-core-shape-circle {
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.validation-core-shape-left {
+  left: 0;
+  top: 32px;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+}
+
+.validation-core-shape-top {
+  left: 32px;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+}
+
+.validation-core-shape-bottom {
+  left: 32px;
+  top: 32px;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+}
+
+.validation-core-wordmark {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+}
+
+.validation-core-wordmark strong {
+  display: block;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(2.5rem, 2.8vw, 3.15rem);
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+  color: #f76712;
+  text-shadow: 0 10px 22px rgba(255, 111, 31, 0.12);
+}
+
+.validation-core-wordmark small {
+  display: block;
+  color: #22314a;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+}
+
+.validation-core-city {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: min(100%, 300px);
-  padding: 0;
-  border: 0;
-  background: none;
-  box-shadow: none;
-  backdrop-filter: none;
-}
-
-.validation-core-logo img {
-  display: block;
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  filter:
-    drop-shadow(0 12px 28px rgba(255, 255, 255, 0.18))
-    drop-shadow(0 10px 24px rgba(166, 70, 13, 0.18));
-}
-
-.validation-core-unit {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 0 16px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  min-height: 24px;
+  color: rgba(247, 103, 18, 0.88);
   font-family: "Sora", sans-serif;
-  font-size: 1rem;
+  font-size: 0.86rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .validation-core p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(30, 41, 57, 0.74);
   line-height: 1.58;
-  max-width: 280px;
+  max-width: 278px;
+  font-size: 0.95rem;
+}
+
+.validation-core-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 320px;
+  color: rgba(30, 41, 57, 0.78);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.validation-core-foot span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 111, 31, 0.44);
 }
 
 .hero-grid {
@@ -1693,7 +1782,7 @@ img {
     grid-template-areas:
       "core core"
       "byd weg"
-      "bel jng";
+      "bel elgin";
   }
 
   .brand-wall {
@@ -1761,7 +1850,7 @@ img {
   }
 
   .brand img {
-    height: 26px;
+    height: 30px;
   }
 
   .hero-copy h1 {
@@ -1777,19 +1866,32 @@ img {
     font-size: 2rem;
   }
 
-  .validation-core-logo {
-    width: 100%;
-    padding: 18px 18px;
+  .validation-core-lockup {
+    gap: 8px;
   }
 
-  .validation-core-logo img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
+  .validation-core-symbol {
+    transform: scale(0.92);
+    transform-origin: center;
   }
 
-  .validation-core-unit {
-    font-size: 0.94rem;
+  .validation-core-wordmark strong {
+    font-size: 2.3rem;
+  }
+
+  .validation-core-wordmark small {
+    font-size: 0.78rem;
+    letter-spacing: 0.26em;
+  }
+
+  .validation-core-city {
+    font-size: 0.78rem;
+    letter-spacing: 0.13em;
+  }
+
+  .validation-core-foot {
+    font-size: 0.72rem;
+    gap: 8px;
   }
 
   .validation-matrix,
@@ -1803,7 +1905,7 @@ img {
       "byd"
       "weg"
       "bel"
-      "jng";
+      "elgin";
   }
 
   .validation-node-media {
