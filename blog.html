@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Connect Energia Solar Curitiba</title>
+    <meta
+      name="description"
+      content="Blog da Connect Energia Solar Curitiba com conteúdos sobre energia solar, economia, fornecedores e decisões mais claras para clientes do Paraná e de Santa Catarina."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo-connect-solar.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="topo">
+        <div class="container header-row">
+          <a class="brand" href="index.html#topo" aria-label="Connect Energia Solar">
+            <span class="brand-badge">
+              <img src="logo-connect-solar.svg" alt="Connect Energia Solar" />
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Menu principal">
+            <a href="index.html">Home</a>
+            <a href="index.html#fornecedores">Fornecedores</a>
+            <a href="#editorial" aria-current="page">Blog</a>
+            <a href="index.html#contato">Contato</a>
+            <a class="button button-primary button-small" href="https://wa.me/5541998641771" target="_blank" rel="noreferrer">
+              Solicitar proposta
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section blog-hero">
+          <div class="container blog-hero-grid">
+            <div class="blog-hero-copy reveal reveal-left">
+              <span class="eyebrow">Blog Connect Curitiba</span>
+              <h1>Um espaço para falar de energia solar de um jeito claro, útil e próximo.</h1>
+              <p class="hero-text">
+                Aqui entram conteúdos que ajudam o cliente a entender economia, fornecedores,
+                processo e decisões do dia a dia, sempre com olhar para o Paraná e Santa Catarina.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="index.html#contato">Falar com a equipe</a>
+                <a class="button button-secondary" href="#editorial">Ver estrutura editorial</a>
+              </div>
+            </div>
+
+            <article class="editorial-card reveal reveal-right" id="editorial">
+              <span class="supplier-kicker">Estrutura Editorial</span>
+              <h2>Um espaço próprio para manter a marca presente e o conteúdo sempre vivo.</h2>
+              <p>
+                A home continua focada em apresentar a unidade e gerar contato. O blog entra para
+                aprofundar assuntos, responder dúvidas frequentes e manter a Connect Curitiba em
+                movimento com consistência.
+              </p>
+              <ul class="check-list">
+                <li>Publicações recorrentes, sem poluir a home.</li>
+                <li>Pautas que ajudam o cliente a entender melhor a decisão.</li>
+                <li>Base pronta para atualização pela equipe ou por parceira editorial.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section blog-embed-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="eyebrow">Feed editorial</span>
+              <h2>Espaço pronto para receber um blog embarcado.</h2>
+              <p>
+                Se a publicação vier por uma plataforma externa, este bloco já está preparado para
+                receber o feed sem quebrar o layout e sem perder a identidade visual do site.
+              </p>
+            </div>
+
+            <div class="blog-embed-shell reveal">
+              <div class="blog-embed-head">
+                <span class="blog-preview-tag">Embed preparado</span>
+                <p>
+                  Quando o código final estiver pronto, a substituição acontece aqui em poucos minutos.
+                </p>
+              </div>
+
+              <div id="soro-blog"></div>
+              <script>
+                (function () {
+                  var s = document.createElement("script");
+                  var p = new URLSearchParams(window.location.search);
+                  var u = "https://app.trysoro.com/api/embed/2d220ef9-922b-4213-8407-04666fb24c29";
+                  if (p.get("post")) u += "?post=" + encodeURIComponent(p.get("post"));
+                  s.src = u;
+                  document.currentScript.after(s);
+                })();
+              </script>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-soft">
+          <div class="container blog-layout">
+            <div class="blog-main">
+              <article class="post-card post-card-featured reveal">
+                <div class="post-tag-row">
+                  <span class="blog-preview-tag">Destaque</span>
+                  <span class="post-meta">Guia prático</span>
+                </div>
+                <h2>O que um bom projeto solar precisa deixar claro antes do preço.</h2>
+                <p>
+                  Antes de olhar só para valor, o cliente precisa entender quatro coisas: o quanto pode
+                  economizar, quais marcas estão no projeto, como funciona a homologação e quem segue por
+                  perto depois da entrega. Quando isso fica claro, a decisão anda melhor.
+                </p>
+                <a class="post-link" href="index.html#contato">Quero entender meu projeto</a>
+              </article>
+
+              <div class="post-grid">
+                <article class="post-card reveal">
+                  <div class="post-tag-row">
+                    <span class="blog-preview-tag">Economia</span>
+                    <span class="post-meta">Leitura de consumo</span>
+                  </div>
+                  <h3>O que realmente pesa no cálculo de economia de um projeto solar?</h3>
+                  <p>
+                    Consumo, tarifa, perfil de uso, área disponível e qualidade do dimensionamento
+                    pesam muito mais do que promessas genéricas.
+                  </p>
+                </article>
+
+                <article class="post-card reveal">
+                  <div class="post-tag-row">
+                    <span class="blog-preview-tag">Fornecedores</span>
+                    <span class="post-meta">Confiança</span>
+                  </div>
+                  <h3>Marcas fortes passam confiança porque cada uma reforça uma parte importante do projeto.</h3>
+                  <p>
+                    BYD reforça tecnologia, WEG soma integração e reconhecimento, BelEnergy fortalece a distribuição
+                    e JNG entra com linha solar e proteção elétrica. Para o cliente, isso aparece como segurança na escolha.
+                  </p>
+                </article>
+
+                <article class="post-card reveal">
+                  <div class="post-tag-row">
+                    <span class="blog-preview-tag">Mercado regional</span>
+                    <span class="post-meta">PR + SC</span>
+                  </div>
+                  <h3>No Paraná, o peso costuma estar mais no campo e na produção. Em Santa Catarina, retorno e continuidade ganham mais força.</h3>
+                  <p>
+                    No PR, o agro, as cooperativas e a produção rural aparecem com mais frequência. Em SC,
+                    comércio, serviços e pequenas indústrias costumam olhar mais para retorno, espaço e previsibilidade.
+                  </p>
+                </article>
+
+                <article class="post-card reveal">
+                  <div class="post-tag-row">
+                    <span class="blog-preview-tag">Processo</span>
+                    <span class="post-meta">Etapas</span>
+                  </div>
+                  <h3>O processo precisa ser simples para o cliente: análise, projeto, homologação, instalação e acompanhamento.</h3>
+                  <p>
+                    Primeiro vem a leitura da conta e o dimensionamento. Depois, entra o pedido na distribuidora
+                    (Copel ou Celesc), a implantação, a ativação do sistema e o pós-venda. Quando isso é bem conduzido,
+                    segurança vira clareza.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <aside class="sidebar-stack">
+              <article class="sidebar-card reveal">
+                <span class="supplier-kicker">Linhas editoriais</span>
+                <div class="tag-cloud">
+                  <span>Economia real</span>
+                  <span>Dúvidas frequentes</span>
+                  <span>Fornecedores</span>
+                  <span>Mercado regional</span>
+                  <span>Projetos</span>
+                  <span>Financiamento</span>
+                </div>
+              </article>
+
+              <article class="sidebar-card reveal">
+                <span class="supplier-kicker">Rotina de atualização</span>
+                <p>
+                  O blog foi pensado para receber novos posts com frequência, sem poluir a home e sem exigir retrabalho de layout a cada publicação.
+                </p>
+                <ul class="sidebar-list">
+                  <li>Frequência alta sem bagunçar a experiência da home.</li>
+                  <li>Base pronta para ganhar autoridade com o tempo.</li>
+                  <li>Conteúdo alinhado ao dia a dia comercial da unidade.</li>
+                </ul>
+              </article>
+
+              <article class="sidebar-card reveal">
+                <span class="supplier-kicker">Contato rápido</span>
+                <a class="blog-inline-link" href="https://wa.me/5541998641771" target="_blank" rel="noreferrer">
+                  WhatsApp: (41) 99864-1771
+                </a>
+                <a class="blog-inline-link" href="https://instagram.com/connectenergiasolarcuritiba" target="_blank" rel="noreferrer">
+                  Instagram: @connectenergiasolarcuritiba
+                </a>
+              </article>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div>
+            <span class="footer-logo-badge">
+              <img class="footer-logo" src="logo-connect-solar.svg" alt="Connect Energia Solar" />
+            </span>
+            <p>
+              Connect Energia Solar Curitiba, com base em Curitiba e atendimento no Paraná e em Santa Catarina.
+            </p>
+          </div>
+
+          <div class="footer-meta">
+            <p class="footer-links">
+              <a href="index.html">Home</a>
+              <span>|</span>
+              <a href="#topo">Voltar ao topo</a>
+            </p>
+            <p>&copy; <span id="year"></span> Connect Energia Solar. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <a class="floating-whatsapp" href="https://wa.me/5541998641771" target="_blank" rel="noreferrer">
+      WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

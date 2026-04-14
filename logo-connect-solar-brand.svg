@@ -1,0 +1,17 @@
+<svg width="520" height="116" viewBox="0 0 520 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="connectBrand" x1="30" y1="18" x2="246" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8B3D"/>
+      <stop offset="1" stop-color="#F76712"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12 18)">
+    <rect x="0" y="18" width="20" height="20" rx="6" fill="url(#connectBrand)"/>
+    <rect x="24" y="0" width="20" height="20" rx="6" fill="url(#connectBrand)"/>
+    <rect x="24" y="24" width="20" height="20" rx="6" fill="url(#connectBrand)"/>
+    <circle cx="10" cy="10" r="10" fill="url(#connectBrand)"/>
+  </g>
+  <text x="82" y="47" fill="url(#connectBrand)" font-family="Sora, Manrope, Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="-1.2">CONNECT</text>
+  <line x1="84" y1="66" x2="146" y2="66" stroke="#F76712" stroke-opacity="0.42" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="158" y="72" fill="#22314A" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="2.8">ENERGIA SOLAR</text>
+</svg>

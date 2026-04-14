@@ -1,0 +1,11 @@
+<svg width="360" height="250" viewBox="0 0 360 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(121 18)">
+    <rect x="0" y="36" width="30" height="30" rx="9" fill="white"/>
+    <rect x="38" y="0" width="30" height="30" rx="9" fill="white"/>
+    <rect x="38" y="38" width="30" height="30" rx="9" fill="white"/>
+    <circle cx="15" cy="15" r="15" fill="white"/>
+  </g>
+  <text x="180" y="128" fill="white" font-family="Sora, Manrope, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.6" text-anchor="middle">CONNECT</text>
+  <line x1="96" y1="153" x2="154" y2="153" stroke="white" stroke-opacity="0.52" stroke-width="3" stroke-linecap="round"/>
+  <text x="182" y="162" fill="white" fill-opacity="0.92" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="4.4" text-anchor="middle">ENERGIA SOLAR</text>
+</svg>
