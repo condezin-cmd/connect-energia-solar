@@ -1,0 +1,10 @@
+.git
+.gitignore
+.claude
+dist
+dist-test
+__pycache__
+*.pyc
+*_check.png
+*.log
+
